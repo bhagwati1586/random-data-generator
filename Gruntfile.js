@@ -23,7 +23,6 @@ module.exports = function (grunt) {
 			]
 		  }
 		}
-		
 	  },
 	  "file-creator": {
 		  "basic": {
@@ -40,7 +39,6 @@ module.exports = function (grunt) {
 				  fs.writeSync(fd, schema);
 
 				  var valueset = "INSERT INTO `customer_data` (`customerNumber`,`first_name`,`last_name`,`company_name`,`address`,`city`,`country`,`postal`,`phone1`,`phone2`,`email`,`web`) VALUES";
-				  
 
 				  var datab = require('./data.json');
 				  var len = grunt.config('mochacli.options.records');
